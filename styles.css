@@ -761,7 +761,7 @@
   outline: none;
 }
 
-.active{
+.active {
   width: 652px;
   height: 59px;
   left: 660px;
@@ -776,8 +776,8 @@
   border-radius: 9px 9px 0px 0px;
 }
 
-.active .arrow-icon{
-  transform: rotate(180deg)
+.active .arrow-icon {
+  transform: rotate(180deg);
 }
 
 .accordion:hover {
@@ -792,54 +792,306 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: #AECCFF;
+  color: #aeccff;
   height: 60px;
   border-radius: 0px 0px 9px 9px;
-  border: 1px solid #31548E;
+  border: 1px solid #31548e;
   align-items: center;
 }
-.panel p{
-  padding-left: 30px
+.panel p {
+  padding-left: 30px;
 }
 .footer-image-accordion-container {
   display: flex;
   margin-top: 80px;
 }
 
-.accordion-container{
+.accordion-container {
   width: 652px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.footer-image-accordion-container{
+.footer-image-accordion-container {
   display: flex;
   justify-content: center;
   gap: 70px;
 }
+.info-panel-text p {
+  display: flex;
+}
 
-.slide-bottom {
-	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.span-text-magic-wrapper {
+  display: flex;
 }
-@-webkit-keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
+
+.span-text-magic-mobile {
+  display: none;
 }
-@keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+
+.info-panel-description-mobile {
+  display: none;
+}
+
+.highlights-text-shipping-mobile {
+  display: none;
+}
+
+.highlights-text-moneyback-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-items {
+    display: none;
   }
-  100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+  .ordernow {
+    display: none;
   }
+  .logo {
+    margin-left: 0px;
+  }
+  .span-text-magic {
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #197aff;
+  }
+  .span-text-magic svg {
+    width: 97px;
+  }
+  .info-panel-text p {
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    color: #11346f;
+  }
+  .span-text-magic-mobile {
+    display: block;
+  }
+  .span-text-magic-desktop {
+    display: none;
+  }
+  .info-panel-text {
+    margin-left: 17px;
+    margin-top: 0px;
+    padding-top: 63px;
+  }
+  .info-panel-description-mobile {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #262626;
+  }
+  .info-panel-description-desktop {
+    display: none;
+  }
+  .info-panel-description {
+    margin-left: 17px;
+  }
+  .info-panel-service-box #description {
+    display: none;
+  }
+  .info-panel-services {
+    margin-left: 9px;
+    background: none;
+    border: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .info-panel {
+    background: #f5fdff;
+  }
+  .info-panel-container {
+    height: 150px;
+  }
+  .header-text-full {
+    display: none;
+  }
+  .info-panel-footer {
+    flex-direction: column;
+  }
+  .buttons-getmassage {
+    margin-left: 0px;
+  }
+  .review-badge {
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 377px;
+  }
+  #highlights-text-star {
+    display: none;
+  }
+  .highlights-text-shipping-desktop {
+    display: none;
+  }
+  .highlights-text-shipping-mobile {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .highlights-text {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .highlights-text-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .highlights-text-icon svg {
+    height: 18px;
+  }
+  .highlights-text-moneyback-desktop {
+    display: none;
+  }
+  .highlights-text-moneyback-mobile {
+    display: block;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+  #moneyback svg {
+    width: 26px;
+    height: 26px;
+  }
+  .highlights {
+    align-items: center;
+    gap: 0px;
+    padding: 0px 50px;
+  }
+  .offers-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    text-align: center;
+    color: #11346f;
+  }
+  .offers-text .buy-more {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    color: #11346f;
+  }
+  .offers-text .offers-text-limited {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .magicmassage-image {
+    display: none;
+  }
+  .offers-cards {
+    flex-direction: column;
+  }
+  .offers {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .customers-saying p {
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .customers-saying-span svg {
+    width: 165px;
+  }
+  .customers-reviews {
+    padding: 0px;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  .customers-reviews-stars {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .customers-reviews-cards {
+    max-width: 400px;
+    overflow: scroll;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .customers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-faq p {
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .footer-faq-span svg {
+    width: 131px;
+  }
+  .footer-image-accordion-container {
+    flex-direction: column;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer-image-accordion-container {
+    margin-top: 40px;
+    align-items: center;
+  }
+  .footer-image-accordion-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .accordion {
+    width: 370px;
+  }
+  .offers-card {
+    width: auto;
+  }
+  .offers-cards-second {
+    width: auto;
+  }
+  .offers-cards-third {
+    width: auto;
+  }
+  .accordion-container {
+    width: auto;
+  }
+  .review-badge {
+    width: 377px;
+  }
+  .info-panel-service-box #header-text {
+    font-size: 12px;
+  }
+  .buttons-getmassage {
+    width: auto;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .review-badge {
+    width: auto;
+  }
+  .highlights {
+    margin-top: 0px;
+  }
+  .info-panel-footer {
+    padding-bottom: 20px;
+  }
+ .accordion-container{
+  padding: 0px 15px;
+ }
 }
